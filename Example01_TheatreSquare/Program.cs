@@ -1,5 +1,8 @@
-﻿long n = 1000;
-long m = 10000;
+﻿long n = 6;
+long m = 6;
 long a = 4;
 
-Console.WriteLine($"Количество плит для укладки площади: {(n / a) * (m / a)}");
+long x = (n + n % a) / a;
+long y = (m + m % a) / a;
+
+Console.WriteLine($"Количество плит для укладки площади: {x * y}");
